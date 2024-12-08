@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(90deg, orangered, yellow);
+    flex-direction: column;
+}
+
+#loading-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+}
+
+#form-container,
+#card {
+    text-align: center;
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(51, 51,51);
+    box-shadow: 0 4px 10px rgba(12, 12, 12, 0.1);
+    border-radius: 8px;
+}
+
+#card {
+    background-color: #333; /* Koyu gri kartvizit arka planı */
+    color: rgb(255, 165, 0); /* Turuncu metin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#card-content {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h2, p {
+    color: rgb(255, 165, 0); /* Tüm metinler için turuncu renk */
+}
+
+a {
+    color: rgb(255, 165, 0); /* Turuncu renk */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(255, 165, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0941b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label, input {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    color: rgb(255, 165, 0);
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8e8c8c;
+    border-radius: 5px;
+    background-color: #8e8c8c;
+}
+
